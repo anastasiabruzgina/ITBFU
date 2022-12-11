@@ -1,0 +1,209 @@
+*::selection {
+    background-color: rgb(0, 0, 0);
+    color: lime;
+}
+
+body {
+    font-size: 18pt;
+    background-image: url("blue-table-cells-2.png");
+    width: 100%;
+    height: 1020px;
+}
+header {
+    background-color: rgba(230, 238, 246, 0.752);
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    font-size: 18pt;
+}
+.container {
+    font-size: 18pt;
+}
+.container.container-1 {
+    margin-left: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    height: 300px;
+    overflow-y: scroll;
+    background-color: rgba(13, 95, 167, 0.665);
+}
+.container.container-1-1 {
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    width: 300px;
+    background-color: rgba(3, 31, 56, 0.665);
+}
+.container.container-1-2 {
+    display: inline-block;
+    margin-left: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 300px;
+    background-color: rgba(23, 35, 45, 0.665);
+}
+.container.container-1-3 {
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 50px;
+    width: 300px;
+    background-color: rgba(13, 95, 167, 0.665);
+}
+.container.container-2 {
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 1400px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(198, 223, 244, 0.441);
+}
+.container.container-2-1 {
+    display: inline-block;
+    overflow-y: scroll;
+    border: 1px solid rgb(0, 0, 0);
+    height: 300px;
+    width: 300px;
+    background-color: rgba(233, 238, 242, 0.441);
+}
+.container.container-2-2 {
+    display: inline-block;
+    margin-left: 50px;
+    overflow-y: scroll;
+    border: 1px solid rgb(0, 0, 0);
+    height: 300px;
+    width: 300px;
+    background-color: rgba(201, 212, 221, 0.197);
+}
+.container.container-2-3 {
+    display: inline-block;
+    margin-left: 50px;
+    overflow-y: scroll;
+    border: 1px solid rgb(0, 0, 0);
+    height: 300px;
+    width: 300px;
+    background-color: rgba(124, 127, 130, 0.441);
+}
+span {
+    display: block;
+}
+span.span_1::first-letter {
+    font-size: 150%;
+    color: red;
+}
+span.span_1::after {
+    display: block;
+    content: "Хитроумные азиаты, впрочем, изобрели еще несколько типов кавычек, европейцам неизвестных.";
+    background-color: blueviolet;
+    text-shadow: black 0 0 2px;
+    border-bottom: 1px solid black;
+}
+
+span.span_2::first-letter {
+    font-size: 150%;
+    color: rgb(120, 3, 3);
+}
+span.span_2::after {
+    display: block;
+    content: "Разве что в текстовых процессорах — они вставляют кавычки должного вида сами, автоматически, если иное не указано в опциях.";
+    background-color: rgba(169, 135, 200, 0.7);
+    text-shadow: black 0 0 4px;
+    border-bottom: 1px solid black;
+}
+span.span_3::first-letter {
+    font-size: 150%;
+    color: rgb(60, 2, 2);
+}
+span.span_3::after {
+    display: block;
+    content: "Примечательно, пожалуй, то, что даже обычные кавычки, выглядящие как обращенные навстречу друг другу пары поднятых вверх запятых, с тем же успехом могут выглядеть и как обращенные друг к другу поднятые вверх круглые елочки.";
+    background-color: rgba(166, 185, 109, 0.705);
+    text-shadow: black 0 0 4px;
+    border-bottom: 1px solid black;
+}
+span.span_4::first-line {
+    font-size: 200%;
+    color: rgb(255, 0, 0);
+}
+span.span_5::first-line {
+    font-size: 200%;
+    color: rgb(8, 104, 142);
+}
+span.span_6::first-line {
+    font-size: 200%;
+    color: rgb(255, 0, 191);
+}
+span.span_4::before {
+    display: block;
+    content: "При книгопечатании тоже сначала по-всякому крутили запятые, но постепенно история развития книгопечатных шрифтов привела к тому, что стали разрабатываться свои собственные печатные знаки для каждой задачи.";
+    background-color: rgba(213, 216, 205, 0.705);
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+span.span_5::before {
+    display: block;
+    content: "Двойная симметричная кавычка нашла в русском языке и ещё одно применение — ей иногда заменяли твёрдый знак.";
+    background-color: rgba(221, 218, 40, 0.547);
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+span.span_6::before {
+    display: block;
+    content: "В 20-х годах прошлого века такое использование кавычки имело место и в газетах и прочих печатных изданиях.";
+    background-color: rgba(20, 112, 51, 0.53);
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+q.lapki::before {
+    content: "„";
+}
+q.lapki::after {
+    content: "“";
+}
+q.elka::before {
+    content: "«";
+}
+q.elka::after {
+    content: "»";
+}
+q.marr::before {
+    content: "‘";
+}
+q.marr::after {
+    content: "’";
+}
+q.nonp::before {
+    content: "\0022";
+}
+q.nonp::after {
+    content: "\0022";
+}
+q.anti::before {
+    content: "»";
+}
+q.anti::after {
+    content: "«";
+}
+q.finn::before {
+    content: "»";
+}
+q.finn::after {
+    content: "»";
+}
+q.afro::before {
+    content: "„";
+}
+q.afro::after {
+    content: "”";
+}
+q.en::before {
+    content: "“";
+}
+q.en::after {
+    content: "”";
+}
+q.bred::before {
+    content: "”";
+}
+q.bred::after {
+    content: "”";
+}
+
+
+
